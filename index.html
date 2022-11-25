@@ -1,24 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <title>Agenda Telefônica - Login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/iphone.css">
+  <link rel="stylesheet" href="./css/keyboard.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <script type="module" src="../Agenda/script.js" defer></script>
+  <script src="./scripts/keyboard.js" defer></script>
+  <title>Agenda Telefônica - Login</title>
 </head>
+
 <body>
-    <header></header>
+  <div class="iphone">
+    <div class="speaker"></div>
+    <div class="camera"></div>
     <main>
-        <div id="root">
+      <div id="root" class="container">
+        <div class="login">
+          <section class="logo">
+            <img src="./logos/icloud-logo.png" alt="Logo do iCloud">
+            <span>Inicie sessão no iCloud</span>
+          </section>
+          <section class="form">
             <form id="login">
-                <input type="email" name="email" placeholder="Usuário">
+              <div class="email">
+                <input type="text" name="email" placeholder="ID Apple">
+              </div>
+              <div class="password">
                 <input type="password" name="senha" placeholder="Senha">
-                <button>Login</button>
-                <p><a href="#" target="_self">Criar conta</a></p>
+                <button><img src="./logos/arrow-right-circle.svg" alt="Seta de login"></button>
+              </div>
             </form>
+          </section>
+          <section class="account">
+            <p>Não tem um Apple ID? <a href="#" target="_self">Crie a sua conta</a></p>
+          </section>
         </div>
+        <section class="keyboard-size"></section>
+      </div>
     </main>
-    <footer></footer>
+    <div class="keyboard hide">
+      <div class="keyboard-container">
+        <div class="letters">
+          <ul class="key-list">
+            <li>q</li>
+            <li>w</li>
+            <li>e</li>
+            <li>r</li>
+            <li>t</li>
+            <li>y</li>
+            <li>u</li>
+            <li>i</li>
+            <li>o</li>
+            <li>p</li>
+          </ul>
+          <ul class="key-list">
+            <li>a</li>
+            <li>s</li>
+            <li>d</li>
+            <li>f</li>
+            <li>g</li>
+            <li>h</li>
+            <li>j</li>
+            <li>k</li>
+            <li>l</li>
+          </ul>
+          <ul class="key-list">
+            <li class="shift gray"><img src="../icons/shift.svg"></li>
+            <li>z</li>
+            <li>x</li>
+            <li>c</li>
+            <li>v</li>
+            <li>b</li>
+            <li>n</li>
+            <li>m</li>
+            <li class="back gray"><img src="../icons/delete-backward.svg"></li>
+          </ul>
+          <ul>
+            <li class="alt gray"><img src="../icons/textformat-123.svg"></li>
+            <li class="gray"><img src="../icons/globe.svg"></li>
+            <li class="mic"><img src="../icons/mic.svg"></li>
+            <li class="space">space</li>
+            <li class="return gray">return</li>
+          </ul>
+        </div>
+        <div class="numbers hide">
+          <ul class="key-list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>0</li>
+          </ul>
+          <ul class="key-list">
+            <li>/</li>
+            <li>:</li>
+            <li>;</li>
+            <li>(</li>
+            <li>)</li>
+            <li>$</li>
+            <li>&</li>
+            <li>@</li>
+          </ul>
+          <ul class="key-list">
+            <li class="shift gray"><img src="../icons/shift.svg"></li>
+            <li>-</li>
+            <li>.</li>
+            <li>,</li>
+            <li>?</li>
+            <li>!</li>
+            <li>'</li>
+            <li>"</li>
+            <li class="back gray"><img src="../icons/delete-backward.svg"></li>
+          </ul>
+          <ul>
+            <li class="alt gray"><img src="../icons/abc.svg"></li>
+            <li class="gray"><img src="../icons/globe.svg"></li>
+            <li class="mic"><img src="../icons/mic.svg"></li>
+            <li class="space">space</li>
+            <li class="return gray">return</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,123 @@
+.keyboard {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* transition: all .5s ease; */
+    height: 246px;
+  
+    overflow: hidden;
+  }
+  
+  .keyboard-container {
+    background: #d1d3d7;
+    padding: 10px 0;
+    transition: all .4s ease;
+  }
+  
+  .keyboard.hide,
+  .keyboard .letters.hide,
+  .keyboard .numbers.hide {
+    visibility: hidden;
+  }
+  
+  .keyboard.hide .keyboard-container {
+    margin-top: 250px;
+  }
+  
+  .keyboard ul {
+    padding: 0 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .keyboard .letters.hide,
+  .keyboard .numbers.hide {
+    display: none;
+  }
+  
+  .keyboard li {
+    background: #fff;
+    border-radius: 5px;
+    display: inline;
+    width: 26px;
+    padding: 10px 2px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 6px;
+  
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  
+    display: flex;
+    justify-content: center;
+  
+    cursor: pointer;
+  }
+  
+  .keyboard li:first-child {
+    margin-left: 0;
+  }
+  
+  .keyboard li.icon,
+  .keyboard li.alt {
+    width: 34px;
+  }
+  
+  .keyboard li img {
+    width: 22px;
+  }
+  
+  .keyboard li.shift {
+    margin-right: auto;
+    width: 34px;
+  }
+  
+  .keyboard li.shift + li {
+    margin-left: 0;
+  }
+  
+  .keyboard.next-key-uppercase li.shift img {
+    filter: invert(34%) sepia(69%) saturate(4514%) hue-rotate(201deg) brightness(103%) contrast(104%);
+  }
+  
+  .keyboard.full-uppercase li.shift img {
+    content: url('../icons/shift-fill.svg');
+  }
+  
+  .keyboard li.back {
+    width: 34px;
+    margin-left: auto;
+  }
+  
+  .keyboard li.back img {
+    filter: brightness(0%);
+  }
+  
+  .keyboard li.space {
+    width: 134px;
+    text-transform: none !important;
+  }
+  
+  .keyboard li.return {
+    width: 78px;
+    color: #6b6d71;
+    text-transform: none !important;
+  }
+  
+  .keyboard .gray {
+    background: #adafb3;
+  }
+  
+  .keyboard li:active {
+    background: #ccc;
+  }
+  
+  .keyboard.next-key-uppercase li,
+  .keyboard.full-uppercase li {
+    text-transform: uppercase;
+  }
